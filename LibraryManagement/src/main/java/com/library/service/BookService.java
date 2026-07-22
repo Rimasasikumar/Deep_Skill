@@ -11,12 +11,9 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
-    public void displayService() {
+    public void addBook() {
+        System.out.println("BookService: Adding a new book...");
 
-        System.out.println("BookService bean is working.");
-
-        bookRepository.displayRepository();
-
+        bookRepository.saveBook();
     }
-
 }

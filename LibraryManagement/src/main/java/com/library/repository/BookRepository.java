@@ -2,8 +2,7 @@ package com.library.repository;
 
 public class BookRepository {
 
-    public void displayRepository() {
-        System.out.println("BookRepository bean is working.");
+    public void saveBook() {
+        System.out.println("BookRepository: Book saved successfully.");
     }
-
 }
