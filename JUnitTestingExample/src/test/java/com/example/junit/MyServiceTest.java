@@ -16,15 +16,29 @@ public class MyServiceTest {
         // Stub the method
         when(mockApi.getData()).thenReturn("Mock Data");
 
+        // Inject mock
+        MyService service = new MyService(mockApi);
+
+        // Call service
+        String result = service.fetchData();
+
+        // Verify returned value
+        assertEquals("Mock Data", result);
+    }
+
+    @Test
+    public void testVerifyInteraction() {
+
+        // Create mock object
+        ExternalApi mockApi = mock(ExternalApi.class);
+
         // Inject mock into service
         MyService service = new MyService(mockApi);
 
-        // Call service method
-        String result = service.fetchData();
+        // Call the method
+        service.fetchData();
 
-        // Verify result
-        assertEquals("Mock Data", result);
-
+        // Verify interaction
+        verify(mockApi).getData();
     }
-
 }
