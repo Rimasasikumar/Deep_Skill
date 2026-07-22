@@ -1,23 +1,6 @@
-*.class
-bin/
-out/
-.idea/
-.vscode/
-# Maven build output
-target/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# VS Code
-.vscode/
-
-# Java compiled files
-*.class
-
-# Logs
-*.log
-
-# OS files
-.DS_Store
-Thumbs.db
+# dependencies
 /node_modules
 /.pnp
 .pnp.js
