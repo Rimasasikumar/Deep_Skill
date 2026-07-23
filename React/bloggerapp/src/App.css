@@ -1,0 +1,16 @@
+.App {
+  font-family: Arial;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-top: 10px;
+}
